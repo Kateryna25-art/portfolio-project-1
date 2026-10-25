@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SHOPE — online jewelry store: earrings, necklaces, rings and hair accessories.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Fast Fashion, And Faster Fashion | SHOPE</title>
+</head>
+
+<body>
+    <div class="wrapper">
+<header class="header">
+  <div class="container">
+    <div class="header__content is-loading justify-between">
+      <div class="header__logo">
+        <a class="header__logo-link" href="index.html" aria-label="SHOPE — home page">
+          <span>S</span>HOPE
+        </a>
+      </div>
+      <div class="header__right is-loading">
+        <nav class="menu" id="main-menu" aria-label="Main menu">
+          <ul class="menu__list d-flex">
+            <li class="menu__item menu-item-dropdown"><a class="menu__link shop-toggle" href="shop.html">Shop</a>
+              <div class="header__dropdown">
+                <div class="dropdown__col">
+                  <div class="dropdown__title">shop pages</div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item"><a class="dropdown__link" href="cart.html">Cart</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="checkout.html">Checkout</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="contact.html">Contact</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="post.html">Post</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="privacy.html">Privacy</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="profile.html">Profile</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown__col">
+                  <div class="dropdown__title">single product</div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item"><a class="dropdown__link" href="shop.html">Shop</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="product.html">Product</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="account.html">Account</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="view-order.html">View-Order</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">Blog</a></li>
+            <li class="menu__item"><a class="menu__link" href="post.html">Our Story</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__action">
+          <ul class="header__action-list d-flex">
+            <li class="header__action-item header__action-item--search">
+              <a class="header__action-link header__search-toggle" href="#" aria-label="Open search"
+                aria-expanded="false">
+                <svg width="19" height="19" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </a>
+              <form class="header__search-form" action="shop.html" method="get" role="search">
+                <input class="header__search-input" type="search" name="s" placeholder="Search products..."
+                  aria-label="Search products" required>
+              </form>
+            </li>
+            <li class="header__action-item">
+              <a class="header__action-link header__cart" href="cart.html" aria-label="Open shopping bag">
+                <svg width="21" height="21" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#basket"></use>
+                </svg>
+                <span class="cart-count is-loading"></span>
+              </a>
+            </li>
+            <li class="header__action-item header__action-item--user">
+              <a class="header__action-link" href="account.html" aria-label="My account">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__burger">
+          <button class="header__burger-btn" type="button" aria-label="Open menu" aria-controls="main-menu"
+            aria-expanded="false">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line header__burger-line--short"></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+<div class="cart-overlay"></div>
+<aside class="shopping-bag" aria-label="Shopping bag">
+  <div class="shopping-bag__header">
+    <div class="shopping-bag__wrapper">
+      <div class="shopping-bag__title">Shopping Bag</div>
+      <button class="shopping-bag__close" type="button" aria-label="Close shopping bag">
+        <svg width="18" height="18">
+          <use xlink:href="images/sprite.svg#remove"></use>
+        </svg>
+      </button>
+    </div>
+    <span class="shopping-bag__sub">5 items</span>
+  </div>
+  <ul class="shopping-bag__list">
+    <li class="shopping-bag__item">
+      <picture>
+        <source srcset="images/jewerly1.avif" type="image/avif">
+        <source srcset="images/jewerly1.webp" type="image/webp">
+        <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+      </picture>
+      <div class="shopping-bag__info">
+        <div class="shopping-bag__brand">
+          <div class="shopping-bag__name">Lira Earrings</div>
+          <button class="shopping-bag__remove" type="button" aria-label="Remove item">
+            <svg width="6" height="6">
+              <use xlink:href="images/sprite.svg#remove"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="shopping-bag__spect">Black / Medium</p>
+        <span class="shopping-bag__price">$ 20,00</span>
+        <div class="shopping-bag__quantity">
+          <span class="shopping-bag__qty">QTY:</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="decrease"
+            aria-label="Decrease quantity">-</button>
+          <span class="shopping-bag__qty-value">1</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="increase"
+            aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+    </li>
+    <li class="shopping-bag__item">
+      <picture>
+        <source srcset="images/jewerly2.avif" type="image/avif">
+        <source srcset="images/jewerly2.webp" type="image/webp">
+        <img src="images/jewerly2.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+      </picture>
+      <div class="shopping-bag__info">
+        <div class="shopping-bag__brand">
+          <div class="shopping-bag__name">Hal Earrings</div>
+          <button class="shopping-bag__remove" type="button" aria-label="Remove item">
+            <svg width="6" height="6">
+              <use xlink:href="images/sprite.svg#remove"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="shopping-bag__spect">Black / Medium</p>
+        <span class="shopping-bag__price">$ 20,00</span>
+        <div class="shopping-bag__quantity">
+          <span class="shopping-bag__qty">QTY:</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="decrease"
+            aria-label="Decrease quantity">-</button>
+          <span class="shopping-bag__qty-value">3</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="increase"
+            aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+    </li>
+    <li class="shopping-bag__item">
+      <picture>
+        <source srcset="images/jewerly1.avif" type="image/avif">
+        <source srcset="images/jewerly1.webp" type="image/webp">
+        <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+      </picture>
+      <div class="shopping-bag__info">
+        <div class="shopping-bag__brand">
+          <div class="shopping-bag__name">Lira Earrings</div>
+          <button class="shopping-bag__remove" type="button" aria-label="Remove item">
+            <svg width="6" height="6">
+              <use xlink:href="images/sprite.svg#remove"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="shopping-bag__spect">Black / Medium</p>
+        <span class="shopping-bag__price">$ 20,00</span>
+        <div class="shopping-bag__quantity">
+          <span class="shopping-bag__qty">QTY:</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="decrease"
+            aria-label="Decrease quantity">-</button>
+          <span class="shopping-bag__qty-value">1</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="increase"
+            aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+    </li>
+    <li class="shopping-bag__item">
+      <picture>
+        <source srcset="images/jewerly1.avif" type="image/avif">
+        <source srcset="images/jewerly1.webp" type="image/webp">
+        <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+      </picture>
+      <div class="shopping-bag__info">
+        <div class="shopping-bag__brand">
+          <div class="shopping-bag__name">Lira Earrings</div>
+          <button class="shopping-bag__remove" type="button" aria-label="Remove item">
+            <svg width="6" height="6">
+              <use xlink:href="images/sprite.svg#remove"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="shopping-bag__spect">Black / Medium</p>
+        <span class="shopping-bag__price">$ 20,00</span>
+        <div class="shopping-bag__quantity">
+          <span class="shopping-bag__qty">QTY:</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="decrease"
+            aria-label="Decrease quantity">-</button>
+          <span class="shopping-bag__qty-value">1</span>
+          <button class="shopping-bag__qty-btn" type="button" data-action="increase"
+            aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="shopping-bag__footer">
+    <div class="shopping-bag__total">
+      <span class="shopping-bag__total-label">Subtotal (5 items)</span>
+      <span class="shopping-bag__total-value">$ 100,00</span>
+    </div>
+    <a class="shopping-bag__checkout" href="cart.html">view cart</a>
+  </div>
+</aside>
+<main class="main">
+  <section class="post">
+    <div class="container">
+      <div class="post__inner d-flex">
+        <aside class="post__sidebar">
+          <search class="post__search">
+            <form class="post__form d-flex" action="#" method="get">
+              <input class="post__form-input" type="search" name="search" placeholder="Search..."
+                aria-label="Search posts">
+              <button class="post__form-btn" type="submit" aria-label="Search">
+                <svg width="19" height="19">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </search>
+          <div class="post__categories">
+            <h2 class="post__categories-title">Categories</h2>
+            <ul class="post__categories-list d-flex flex-column">
+              <li class="post__categories-item"><a class="post__categories-link" href="#">Fashion</a>
+              </li>
+              <li class="post__categories-item"><a class="post__categories-link" href="#">Style</a>
+              </li>
+              <li class="post__categories-item"><a class="post__categories-link" href="#">Accessories</a>
+              </li>
+              <li class="post__categories-item"><a class="post__categories-link" href="#">Season</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="post__wrapper">
+          <article class="post__article">
+            <h1 class="post__title">Fast Fashion, And Faster Fashion</h1>
+            <div class="post__meta d-flex">
+              <span class="post__prefix">by</span>
+              <span class="post__name">anna johnson</span>
+              <span class="post__date">- October 8,2020</span>
+            </div>
+            <div class="post__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" alt="collection jewerly">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" loading="lazy" alt="collection jewerly">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" loading="lazy" alt="collection jewerly">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" loading="lazy" alt="collection jewerly">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" loading="lazy" alt="collection jewerly">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="images/post1.avif" type="image/avif">
+                    <source srcset="images/post1.webp" type="image/webp">
+                    <img src="images/post1.jpg" width="947" height="489" loading="lazy" alt="collection jewerly">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination is-loading"></div>
+            </div>
+            <div class="post__box-narrow container-small">
+              <div class="post__box">
+                <p class="post__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                  augue
+                  a
+                  volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget
+                  arcu facilisis consequat sed eu felis. Nunc sed porta augue.</p>
+                <p class="post__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                  augue
+                  a
+                  volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget
+                  arcu facilisis consequat sed eu felis.</p>
+              </div>
+              <div class="post__box">
+                <picture>
+                  <source srcset="images/post2.avif" type="image/avif">
+                  <source srcset="images/post2.webp" type="image/webp">
+                  <img src="images/post2.jpg" width="670" height="300" loading="lazy" alt="collection jewerly">
+                </picture>
+                <h2 class="post__box-title">Top trends</h2>
+
+                <p class="post__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                  augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero.</p>
+                <ul class="post__box-list">
+                  <li class="post__box-item">consectetur adipiscing elit. Aliquam placerat</li>
+                  <li class="post__box-item">Lorem ipsum dolor sit amet consectetur</li>
+                  <li class="post__box-item"> sapien tortor faucibus augue</li>
+                  <li class="post__box-item">a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis</li>
+                </ul>
+              </div>
+              <div class="post__bottom is-loading justify-between">
+                <div class="post__tags d-flex">
+                  <span class="post__tags-title">Tags</span>
+                  <ul class="post__tags-list d-flex">
+                    <li class="post__tags-item">Fashion,</li>
+                    <li class="post__tags-item">Style,</li>
+                    <li class="post__tags-item">Season</li>
+                  </ul>
+                </div>
+                <div class="post__tags d-flex">
+                  <span class="post__tags-title">Share</span>
+                  <ul class="post__tags-list post__tags-icon d-flex">
+                    <li class="post__tags-item">
+                      <a class="post__tags-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="19" height="19">
+                          <use xlink:href="images/sprite.svg#face-footer"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="post__tags-item">
+                      <a class="post__tags-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="19" height="19">
+                          <use xlink:href="images/sprite.svg#insta-footer"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="post__tags-item">
+                      <a class="post__tags-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg width="19" height="19">
+                          <use xlink:href="images/sprite.svg#twit-footer"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <form class="post__footer" action="#" method="post">
+                <h2 class="post__footer-title">Leave a reply</h2>
+                <div class="post__footer-subtitle">Your email address will not be published. Required fields are marked
+                  *</div>
+                <div class="post__footer-content">
+                  <input class="post__footer-input" type="text" name="author" required autocomplete="name"
+                    placeholder="Enter your name*" aria-label="Name">
+                </div>
+                <div class="post__footer-content">
+                  <input class="post__footer-input" type="email" name="email" required autocomplete="email"
+                    placeholder="Enter your Email*" aria-label="Email">
+                </div>
+                <div class="post__footer-content">
+                  <input class="post__footer-input" type="url" name="url" autocomplete="url"
+                    placeholder="Enter your Website" aria-label="Website">
+                </div>
+                <div class="post__footer-content">
+                  <label class="post__footer-checkbox-label" for="save-user">
+                    <input class="post__footer-checkbox" type="checkbox" id="save-user">
+                    <span class="post__footer-custom"></span>
+                    <span class="post__footer-text">Save my name, email, and website in this browser for the next time I
+                      comment</span>
+                  </label>
+                </div>
+                <div class="post__footer-content">
+                  <textarea class="post__footer-textarea" name="comment" placeholder="Your Comment*"
+                    aria-label="Comment" required></textarea>
+                </div>
+                <button class="post__footer-btn" type="submit">post comment</button>
+              </form>
+              <div class="post__comment">
+                <h2 class="post__comment-title">Comments(3)</h2>
+                <ul class="post__comment-list d-flex flex-column">
+                  <li class="post__comment-item d-flex">
+                    <div class="post__comment-avatar">
+                      <picture>
+                        <source srcset="images/avatar1.avif" type="image/avif">
+                        <source srcset="images/avatar1.webp" type="image/webp">
+                        <img src="images/avatar1.jpg" width="70" height="70" loading="lazy" alt="collection jewerly">
+                      </picture>
+                    </div>
+                    <div class="post__comment-content">
+                      <div class="post__comment-info d-flex justify-between">
+                        <div class="post__comment-author is-loading">
+                          <h3 class="post__comment-author-title">Scarlet withch</h3>
+                          <span class="post__comment-author-date">6 May, 2020</span>
+                        </div>
+                        <a class="post__comment-reply justify-between" href="#">
+                          <svg width="16" height="14">
+                            <use xlink:href="images/sprite.svg#reply-arrow"></use>
+                          </svg>
+                          <span>Reply</span>
+                        </a>
+                      </div>
+                      <p class="post__comment-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet.</p>
+                    </div>
+                  </li>
+                  <li class="post__comment-item post__comment-item--reply d-flex">
+                    <div class="post__comment-avatar">
+                      <picture>
+                        <source srcset="images/avatar2.avif" type="image/avif">
+                        <source srcset="images/avatar2.webp" type="image/webp">
+                        <img src="images/avatar2.jpg" width="70" height="70" loading="lazy" alt="collection jewerly">
+                      </picture>
+                    </div>
+                    <div class="post__comment-content">
+                      <div class="post__comment-info d-flex justify-between">
+                        <div class="post__comment-author is-loading">
+                          <h3 class="post__comment-author-title">Kate moss</h3>
+                          <span class="post__comment-author-date">6 May, 2020</span>
+                        </div>
+                        <a class="post__comment-reply justify-between" href="#">
+                          <svg width="16" height="14">
+                            <use xlink:href="images/sprite.svg#reply-arrow"></use>
+                          </svg>
+                          <span>Reply</span>
+                        </a>
+                      </div>
+                      <p class="post__comment-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet.</p>
+                    </div>
+                  </li>
+                  <li class="post__comment-item d-flex">
+                    <div class="post__comment-avatar">
+                      <picture>
+                        <source srcset="images/avatar1.avif" type="image/avif">
+                        <source srcset="images/avatar1.webp" type="image/webp">
+                        <img src="images/avatar1.jpg" width="70" height="70" loading="lazy" alt="collection jewerly">
+                      </picture>
+                    </div>
+                    <div class="post__comment-content">
+                      <div class="post__comment-info d-flex justify-between">
+                        <div class="post__comment-author is-loading">
+                          <h3 class="post__comment-author-title">Scarlet withch</h3>
+                          <span class="post__comment-author-date">6 May, 2020</span>
+                        </div>
+                        <a class="post__comment-reply justify-between" href="#">
+                          <svg width="16" height="14">
+                            <use xlink:href="images/sprite.svg#reply-arrow"></use>
+                          </svg>
+                          <span>Reply</span>
+                        </a>
+                      </div>
+                      <p class="post__comment-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top is-loading justify-between">
+      <ul class="footer__top-list d-flex">
+        <li class="footer__top-item"><a class="footer__top-link" href="contact.html">contact</a>
+        </li>
+        <li class="footer__top-item"><a class="footer__top-link" href="privacy.html">terms of services</a>
+        </li>
+        <li class="footer__top-item"><a class="footer__top-link" href="#">shipping and returns</a>
+        </li>
+      </ul>
+      <form class="footer__subscribe is-loading justify-between" action="#" method="post">
+        <input class="footer__subscribe-input" type="email" name="email" required autocomplete="email"
+          placeholder="Give an email, get the newsletter." aria-label="Email for newsletter">
+        <button class="footer__subscribe-btn" type="submit" aria-label="Subscribe">
+          <svg width="19" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="footer__bottom is-loading justify-between">
+      <p class="footer__bottom-text">
+        <span class="footer__bottom-dark">© 2026 SHOPE.</span> Terms of use <span
+          class="footer__bottom-dark">and</span> privacy policy.</p>
+      <div class="footer__social d-flex">
+        <a class="footer__social-link" href="#" aria-label="LinkedIn">
+          <svg width="19" height="19">
+            <use xlink:href="images/sprite.svg#link-footer"></use>
+          </svg>
+        </a>
+        <a class="footer__social-link" href="#" aria-label="Facebook">
+          <svg width="19" height="19">
+            <use xlink:href="images/sprite.svg#face-footer"></use>
+          </svg>
+        </a>
+        <a class="footer__social-link" href="#" aria-label="Instagram">
+          <svg width="19" height="19">
+            <use xlink:href="images/sprite.svg#insta-footer"></use>
+          </svg>
+        </a>
+        <a class="footer__social-link" href="#" aria-label="Twitter">
+          <svg width="19" height="19">
+            <use xlink:href="images/sprite.svg#twit-footer"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

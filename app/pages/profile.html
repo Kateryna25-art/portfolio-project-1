@@ -1,0 +1,228 @@
+<!--=include head.html  -->
+    <title>Profile | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="profile">
+    <div class="container">
+      <div class="profile__inner">
+        <h1 class="profile__title">My Account</h1>
+        <nav class="profile-nav">
+          <ul class="profile-nav__list d-flex">
+            <li class="profile-nav__item is-active"><a class="profile-nav__link" href="#dashboard">Dashboard</a>
+            </li>
+            <li class="profile-nav__item"><a class="profile-nav__link" href="#orders">Orders</a>
+            </li>
+            <li class="profile-nav__item"><a class="profile-nav__link" href="#downloads">Downloads</a>
+            </li>
+            <li class="profile-nav__item"><a class="profile-nav__link" href="#addresses">Addresses</a>
+            </li>
+            <li class="profile-nav__item"><a class="profile-nav__link" href="#account-details">Account
+                details</a>
+            </li>
+            <li class="profile-nav__item"><a class="profile-nav__link" href="account.html">Logout</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="profile__content is-active" id="dashboard">
+          <p class="profile__text">Hello Vitatheme (not Vitatheme? <a class="profile__link-inline" href="account.html">Log
+              out</a>)</p>
+          <p class="profile__text">From your account dashboard you can view your <a class="profile__link-inline"
+              href="#orders">recent orders</a>, manage your <a class="profile__link-inline" href="#addresses">shipping and
+              billing addresses</a>, and edit
+            your <a class="profile__link-inline" href="#account-details">password and account details</a>.
+          </p>
+        </div>
+        <div class="profile__content" id="orders">
+          <div class="profile__orders-box d-flex justify-between">
+            <p class="profile__text">No order has been made yet.</p>
+            <a class="profile__downloads-btn" href="shop.html">browse product</a>
+          </div>
+          <table class="profile__orders-table">
+            <thead class="profile__orders-table__head">
+              <tr class="profile__orders-table__row">
+                <th class="profile__orders-table__th">order number</th>
+                <th class="profile__orders-table__th">date</th>
+                <th class="profile__orders-table__th">status</th>
+                <th class="profile__orders-table__th">total</th>
+                <th class="profile__orders-table__th">actions</th>
+              </tr>
+            </thead>
+            <tbody class="profile__orders-table__body">
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">7643980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Delivered</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 105</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">943980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Processing</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 100</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">879980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Delivered</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 65</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="profile__content" id="downloads">
+          <div class="profile__orders-box d-flex justify-between">
+            <p class="profile__text">No downloads available yet.</p>
+            <a class="profile__downloads-btn" href="shop.html">browse product</a>
+          </div>
+          <table class="profile__orders-table">
+            <thead class="profile__orders-table__head">
+              <tr class="profile__orders-table__row">
+                <th class="profile__orders-table__th">order number</th>
+                <th class="profile__orders-table__th">date</th>
+                <th class="profile__orders-table__th">status</th>
+                <th class="profile__orders-table__th">total</th>
+                <th class="profile__orders-table__th">actions</th>
+              </tr>
+            </thead>
+            <tbody class="profile__orders-table__body">
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">7643980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Delivered</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 105</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">943980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Processing</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 100</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+              <tr class="profile__orders-table__row">
+                <td class="profile__orders-table__td" data-label="Order">879980998990</td>
+                <td class="profile__orders-table__td" data-label="Date">October 8,2021</td>
+                <td class="profile__orders-table__td" data-label="Status">Delivered</td>
+                <td class="profile__orders-table__td" data-label="Total">$ 65</td>
+                <td class="profile__orders-table__td" data-label="Actions"><a class="profile__orders-table__action" href="view-order.html">View Order</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="profile__content" id="addresses">
+          <p class="profile__text">The following addresses will be used on the checkout page by default.</p>
+          <div class="profile__addresses-box d-flex justify-between">
+            <div class="profile__addresses-column">
+              <div class="profile__addresses-card">
+                <h3 class="profile__addresses-title">Billing address</h3>
+                <div class="profile__addresses-preview">
+                  <a href="#address-form" class="profile__addresses-action">add</a>
+                  <p class="profile__addresses-desc">You have not set up this type of address yet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile__addresses-column">
+              <div class="profile__addresses-card">
+                <h3 class="profile__addresses-title">Shipping address</h3>
+                <div class="profile__addresses-preview">
+                  <a href="#address-form" class="profile__addresses-action">add</a>
+                  <p class="profile__addresses-desc">You have not set up this type of address yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="profile__addresses-form d-flex flex-column is-hidden" id="address-form" action="#" method="post">
+            <input type="hidden" name="address_type" id="address-type" value="">
+            <div class="addresses__form-row d-flex justify-between">
+              <label class="addresses__form-field">
+                <input class="addresses__form-input" type="text" placeholder="First name*" name="first_name" required>
+              </label>
+              <label class="addresses__form-field">
+                <input class="addresses__form-input" type="text" placeholder="last name *" name="last_name" required>
+              </label>
+            </div>
+            <label class="addresses__form-field">
+              <input class="addresses__form-input" type="text" placeholder="Company Name" name="company">
+            </label>
+            <label class="addresses__form-field">
+              <select class="addresses__form-input addresses__form-select" name="country" aria-label="Country" required>
+                <option value="">Country *</option>
+                <option value="UA">Ukraine</option>
+                <option value="US">United States</option>
+              </select>
+            </label>
+            <label class="addresses__form-field">
+              <input class="addresses__form-input" type="text" placeholder="Street Address *" name="address" required>
+            </label>
+            <label class="addresses__form-field">
+              <input class="addresses__form-input" type="text" placeholder="Postcode / ZIP *" name="postcode" required>
+            </label>
+            <label class="addresses__form-field">
+              <input class="addresses__form-input" type="text" placeholder="Town / City *" name="city" required>
+            </label>
+            <label class="addresses__form-field billing-only">
+              <input class="addresses__form-input" type="tel" placeholder="Phone *" name="phone" required>
+            </label>
+            <label class="addresses__form-field billing-only">
+              <input class="addresses__form-input" type="email" placeholder="Email *" name="email" required>
+            </label>
+            <button class="profile__btn-form" type="submit">save address</button>
+          </form>
+        </div>
+        <div class="profile__content" id="account-details">
+          <div class="profile__account">
+            <h2 class="profile__account-title">Account details</h2>
+            <form class="profile__account-form d-flex flex-column" action="#" method="post">
+              <label class="profile__account-form__field">
+                <input class="profile__account-form__input" type="text" placeholder="First name*" name="first_name"
+                  required>
+              </label>
+              <label class="profile__account-form__field">
+                <input class="profile__account-form__input" type="text" placeholder="Last name*" name="last_name"
+                  required>
+              </label>
+              <label class="profile__account-form__field">
+                <input class="profile__account-form__input" type="text" placeholder="Display name*" name="display_name"
+                  required>
+                <p class="profile__account-form__hint">This will be how your name will be displayed in the
+                  account section and in reviews.</p>
+              </label>
+              <label class="profile__account-form__field">
+                <input class="profile__account-form__input" type="email" placeholder="Email address*" name="email"
+                  required>
+              </label>
+              <fieldset class="profile__account-form__fieldset">
+                <legend class="profile__account-form__legend">Password change</legend>
+                <label class="profile__account-form__field">
+                  <input class="profile__account-form__input" type="password"
+                    placeholder="Current password (leave blank to leave unchanged)" name="current_password">
+                </label>
+                <label class="profile__account-form__field">
+                  <input class="profile__account-form__input" type="password"
+                    placeholder="New password (leave blank to leave unchanged)" name="new_password">
+                </label>
+                <label class="profile__account-form__field">
+                  <input class="profile__account-form__input" type="password" placeholder="Confirm new password"
+                    name="confirm_password">
+                </label>
+              </fieldset>
+              <button class="profile__account-form__btn" type="submit">save changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->

@@ -1,0 +1,40 @@
+<!--=include head.html  -->
+    <title>Contact us | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <h1 class="contact__title">Contact Us</h1>
+        <div class="contact__wrapper">
+          <p class="contact__text">Say Hello send us your thoughts about our products or share
+            your ideas with our Team!</p>
+        </div>
+        <form class="contact-form d-flex justify-between" action="#" method="post">
+          <div class="contact-form__row d-flex">
+            <input class="contact-form__input" type="text" required name="first_name" autocomplete="given-name"
+              placeholder="First name" aria-label="First name">
+            <input class="contact-form__input" type="text" required name="last_name" autocomplete="family-name"
+              placeholder="Last name" aria-label="Last name">
+          </div>
+          <div class="contact-form__row d-flex">
+            <input class="contact-form__input" type="email" required name="email" autocomplete="email"
+              placeholder="Email" aria-label="Email">
+            <select class="contact-form__input" name="subject" aria-label="Subject" required>
+              <option value="" disabled selected>Subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="order">Order Status</option>
+            </select>
+          </div>
+          <div class="contact-form__row contact-form__row--full d-flex">
+            <textarea class="contact-form__textarea" name="message" required placeholder="Message" aria-label="Message"></textarea>
+          </div>
+          <button type="submit" class="contact-form__btn">send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->

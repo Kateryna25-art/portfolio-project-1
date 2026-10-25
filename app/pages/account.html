@@ -1,0 +1,53 @@
+<!--=include head.html  -->
+    <title>My account | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="account">
+    <div class="container">
+      <div class="account__inner">
+        <h1 class="account__title">My account</h1>
+        <div class="account__tabs">
+          <button class="account__tab account__tab--active" type="button" data-tab="signin">Sign in</button>
+          <button class="account__tab" type="button" data-tab="register">Register</button>
+        </div>
+        <form class="account-form account-form--signin account-form--active" id="signin-form">
+          <div class="account-form__block">
+            <input class="account-form__input" type="email" name="email" placeholder="Email" aria-label="Email" required
+              autocomplete="email">
+          </div>
+          <div class="account-form__block">
+            <input class="account-form__input" type="password" name="password" placeholder="Password" aria-label="Password" required
+              autocomplete="current-password">
+          </div>
+          <div class="account-form__block account-form__block--checkbox">
+            <label class="account-form__label-checkbox">
+              <input class="account-form__checkbox" type="checkbox" name="remember">
+              <span class="account-form__checkbox-custom"></span>
+              Remember me
+            </label>
+          </div>
+          <button class="account-form__btn" type="submit">sign in</button>
+          <a class="account-form__link" href="resetpassword.html">Have you forgotten your password?</a>
+        </form>
+        <form class="account-form account-form--register" id="register-form">
+          <div class="account-form__block">
+            <input class="account-form__input" type="email" name="email" placeholder="Email" aria-label="Email" required
+              autocomplete="email">
+          </div>
+          <div class="account-form__block">
+            <input class="account-form__input" type="password" name="password" placeholder="Password" aria-label="Password" required
+              autocomplete="new-password">
+          </div>
+          <div class="account-form__block">
+            <input class="account-form__input" type="password" name="password_confirm" placeholder="Confirm password" aria-label="Confirm password" required
+              autocomplete="new-password">
+          </div>
+          <button class="account-form__btn" type="submit">register</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->

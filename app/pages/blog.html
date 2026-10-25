@@ -1,0 +1,127 @@
+<!--=include head.html  -->
+    <title>Blog | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="blog">
+    <div class="container">
+      <h1 class="blog__title">Blog</h1>
+      <div class="blog__inner d-flex justify-between">
+        <aside class="blog__sidebar">
+          <search class="blog__search">
+            <form class="blog__form d-flex" action="#" method="get">
+              <input class="blog__form-input" type="search" name="search" placeholder="Search..."
+                aria-label="Search posts">
+              <button class="blog__form-btn is-loading" type="submit" aria-label="Search">
+                <svg width="19" height="19">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </search>
+          <div class="blog__categories">
+            <h2 class="blog__categories-title">Categories</h2>
+            <ul class="blog__categories-list d-flex flex-column">
+              <li class="blog__categories-item"><a class="blog__categories-link" href="#">Fashion</a>
+              </li>
+              <li class="blog__categories-item"><a class="blog__categories-link" href="#">Style</a>
+              </li>
+              <li class="blog__categories-item"><a class="blog__categories-link" href="#">Accessories</a>
+              </li>
+              <li class="blog__categories-item"><a class="blog__categories-link" href="#">Season</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="blog__wrapper">
+          <article class="blog__box">
+            <a class="blog__box-link" href="post.html" tabindex="-1" aria-hidden="true">
+              <picture class="blog__box-img">
+                <source srcset="images/blog1.avif" type="image/avif">
+                <source srcset="images/blog1.webp" type="image/webp">
+                <img src="images/blog1.jpg" width="450" height="300" loading="lazy" alt="collection jewerly spring">
+              </picture>
+            </a>
+            <div class="blog__content">
+              <span class="blog__content-date">Fashion - October 8, 2020</span>
+              <h2 class="blog__content-title">Top Trends From Spring</h2>
+              <p class="blog__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                faucibus augue, a maximus elit ex vitae libero... </p>
+              <a class="blog__content-link" href="post.html">Read More</a>
+            </div>
+          </article>
+          <article class="blog__box">
+            <a class="blog__box-link" href="post.html" tabindex="-1" aria-hidden="true">
+              <picture class="blog__box-img">
+                <source srcset="images/blog2.avif" type="image/avif">
+                <source srcset="images/blog2.webp" type="image/webp">
+                <img src="images/blog2.jpg" width="450" height="300" loading="lazy" alt="collection jewerly spring">
+              </picture>
+            </a>
+            <div class="blog__content">
+              <span class="blog__content-date">Fashion - October 8, 2020</span>
+              <h2 class="blog__content-title">Top Trends From Spring</h2>
+              <p class="blog__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                faucibus augue, a maximus elit ex vitae libero... </p>
+              <a class="blog__content-link" href="post.html">Read More</a>
+            </div>
+          </article>
+          <article class="blog__box">
+            <a class="blog__box-link" href="post.html" tabindex="-1" aria-hidden="true">
+              <picture class="blog__box-img">
+                <source srcset="images/blog3.avif" type="image/avif">
+                <source srcset="images/blog3.webp" type="image/webp">
+                <img src="images/blog3.jpg" width="450" height="300" loading="lazy" alt="collection jewerly spring">
+              </picture>
+            </a>
+            <div class="blog__content">
+              <span class="blog__content-date">Fashion - October 8, 2020</span>
+              <h2 class="blog__content-title">Top Trends From Spring</h2>
+              <p class="blog__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                faucibus augue, a maximus elit ex vitae libero... </p>
+              <a class="blog__content-link" href="post.html">Read More</a>
+            </div>
+          </article>
+          <article class="blog__box">
+            <a class="blog__box-link" href="post.html" tabindex="-1" aria-hidden="true">
+              <picture class="blog__box-img">
+                <source srcset="images/blog4.avif" type="image/avif">
+                <source srcset="images/blog4.webp" type="image/webp">
+                <img src="images/blog4.jpg" width="450" height="300" loading="lazy" alt="collection jewerly spring">
+              </picture>
+            </a>
+            <div class="blog__content">
+              <span class="blog__content-date">Fashion - October 8, 2020</span>
+              <h2 class="blog__content-title">Top Trends From Spring</h2>
+              <p class="blog__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                faucibus augue, a maximus elit ex vitae libero... </p>
+              <a class="blog__content-link" href="post.html">Read More</a>
+            </div>
+          </article>
+          <nav class="blog__pagination d-flex" aria-label="Blog Pagination">
+            <ul class="blog__pagination-list d-flex">
+              <li class="blog__pagination-item">
+                <a class="blog__pagination-link blog__pagination-link--active is-loading" aria-current="page"
+                  href="#">1</a>
+              </li>
+              <li class="blog__pagination-item">
+                <a class="blog__pagination-link is-loading" aria-label="Page 2" href="#">2</a>
+              </li>
+              <li class="blog__pagination-item">
+                <a class="blog__pagination-link blog__pagination-link--next is-loading" aria-label="Next page" href="#">
+                  <svg width="5" height="10">
+                    <use xlink:href="images/sprite.svg#pagination"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--=include footer__sub.html  -->
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->

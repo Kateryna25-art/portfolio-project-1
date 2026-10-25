@@ -1,0 +1,161 @@
+<!--=include head.html  -->
+    <title>Shopping cart | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="cart">
+    <div class="container">
+      <div class="cart__inner">
+        <h1 class="cart__title">Shopping Cart</h1>
+        <div class="cart__container">
+          <div class="cart__box">
+            <ul class="cart__box-list d-flex flex-column">
+              <li class="cart__box-item d-flex">
+                <picture>
+                  <source srcset="images/jewerly1.avif" type="image/avif">
+                  <source srcset="images/jewerly1.webp" type="image/webp">
+                  <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+                </picture>
+                <div class="cart__box-info">
+                  <div class="cart__box-brand d-flex">
+                    <div class="cart__box-name">Lira Earrings</div>
+                    <div class="cart__box-integration d-flex">
+                      <div class="cart__box-quantity d-flex">
+                        <button class="cart__box-qty-btn" type="button" data-action="decrease"
+                          aria-label="Decrease quantity">-</button>
+                        <span class="cart__box-qty-value">1</span>
+                        <button class="cart__box-qty-btn" type="button" data-action="increase"
+                          aria-label="Increase quantity">+</button>
+                      </div>
+                      <button class="cart__box-remove" type="button" aria-label="Remove item">
+                        <svg width="11" height="12">
+                          <use xlink:href="images/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="cart__box-spect">Black / Medium</p>
+                  <span class="cart__box-price">$ 20,00</span>
+                </div>
+              </li>
+              <li class="cart__box-item d-flex">
+                <picture>
+                  <source srcset="images/jewerly1.avif" type="image/avif">
+                  <source srcset="images/jewerly1.webp" type="image/webp">
+                  <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+                </picture>
+                <div class="cart__box-info">
+                  <div class="cart__box-brand d-flex">
+                    <div class="cart__box-name">Lira Earrings</div>
+                    <div class="cart__box-integration d-flex">
+                      <div class="cart__box-quantity d-flex">
+                        <button class="cart__box-qty-btn" type="button" data-action="decrease"
+                          aria-label="Decrease quantity">-</button>
+                        <span class="cart__box-qty-value">1</span>
+                        <button class="cart__box-qty-btn" type="button" data-action="increase"
+                          aria-label="Increase quantity">+</button>
+                      </div>
+                      <button class="cart__box-remove" type="button" aria-label="Remove item">
+                        <svg width="11" height="12">
+                          <use xlink:href="images/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="cart__box-spect">Black / Medium</p>
+                  <span class="cart__box-price">$ 20,00</span>
+                </div>
+              </li>
+              <li class="cart__box-item d-flex">
+                <picture>
+                  <source srcset="images/jewerly1.avif" type="image/avif">
+                  <source srcset="images/jewerly1.webp" type="image/webp">
+                  <img src="images/jewerly1.jpg" width="136" height="136" loading="lazy" alt="collection jewerly spring">
+                </picture>
+                <div class="cart__box-info">
+                  <div class="cart__box-brand d-flex">
+                    <div class="cart__box-name">Lira Earrings</div>
+                    <div class="cart__box-integration d-flex">
+                      <div class="cart__box-quantity d-flex">
+                        <button class="cart__box-qty-btn" type="button" data-action="decrease"
+                          aria-label="Decrease quantity">-</button>
+                        <span class="cart__box-qty-value">1</span>
+                        <button class="cart__box-qty-btn" type="button" data-action="increase"
+                          aria-label="Increase quantity">+</button>
+                      </div>
+                      <button class="cart__box-remove" type="button" aria-label="Remove item">
+                        <svg width="11" height="12">
+                          <use xlink:href="images/sprite.svg#remove"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="cart__box-spect">Black / Medium</p>
+                  <span class="cart__box-price">$ 20,00</span>
+                </div>
+              </li>
+            </ul>
+            <div class="cart__box-action d-flex flex-column">
+              <button class="cart__update-btn" type="button">update cart</button>
+              <div class="cart__coupon d-flex">
+                <input class="cart__coupon-input" id="coupon_code" type="text" placeholder="Coupon Code" aria-label="Coupon code">
+                <button class="cart__coupon-btn" type="button">apply coupon</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart__content">
+            <h2 class="cart__content-title">Cart Totals</h2>
+            <div class="cart__total-row d-flex justify-between">
+              <span class="cart__total-label">subtotal</span>
+              <span class="cart__total-value">$ 65,00</span>
+            </div>
+            <div class="cart__total-row d-flex justify-between">
+              <span class="cart__total-label">shipping</span>
+              <span class="cart__total-value cart__total-span">Shipping costs will be calculated once you have provided
+                address.</span>
+            </div>
+            <details class="cart__shipping-calc">
+              <summary class="cart__shipping-toggle is-loading justify-between">
+                <span>calculate shipping</span>
+                <svg class="cart__shipping-arrow" width="6" height="6">
+                  <use xlink:href="images/sprite.svg#arrow-details"></use>
+                </svg>
+              </summary>
+              <div class="cart__shipping-content d-flex flex-column">
+                <select class="cart__shipping-input" name="calc_shipping_country" aria-label="Country">
+                  <option value="" disabled selected>select a country</option>
+                  <option value="RO">Romania</option>
+                  <option value="US">United States</option>
+                  <option value="GB">United Kingdom</option>
+                </select>
+                <div class="cart__shipping-field justify-between is-loading">
+                  <input class="cart__shipping-input" type="text" name="calc_shipping_city" placeholder="city" aria-label="City">
+                  <svg width="8" height="8">
+                    <use xlink:href="images/sprite.svg#arrow-input"></use>
+                  </svg>
+                </div>
+                <div class="cart__shipping-field justify-between is-loading">
+                  <input class="cart__shipping-input" type="text" name="calc_shipping_postcode" placeholder="post code / zip" aria-label="Post code">
+                  <svg width="8" height="8">
+                    <use xlink:href="images/sprite.svg#arrow-input"></use>
+                  </svg>
+                </div>
+                <button class="cart__shipping-btn" type="button">update totals</button>
+              </div>
+            </details>
+            <div class="cart__summa d-flex flex-column">
+              <div class="cart__summa-wrapper d-flex justify-between">
+                <span class="cart__summa-total">total</span>
+                <span class="cart__summa-price">$ 87,00</span>
+              </div>
+              <a class="cart__summa-btn" href="checkout.html">proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--=include footer.html  -->
+<!--=include script.html  -->

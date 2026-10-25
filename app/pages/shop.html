@@ -1,0 +1,68 @@
+<!--=include head.html  -->
+    <title>Shop | SHOPE</title>
+<!--=include body-start.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="shop">
+    <div class="container">
+      <div class="shop__inner">
+        <h1 class="shop-sidebar__title">Shop The Latest</h1>
+        <div class="shop__layout d-flex">
+
+          <aside class="shop-sidebar">
+            <div class="shop-sidebar__search">
+              <input type="search" placeholder="Search..." class="shop-sidebar__input" aria-label="Search products">
+              <button class="shop-sidebar__btn" type="button" aria-label="Search">
+                <svg width="19" height="19">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="shop-sidebar__filter">
+              <select class="shop-sidebar__select" name="shop_by" aria-label="Shop by category">
+                <option value="" disabled selected>Shop By</option>
+                <option value="earrings">Earrings</option>
+                <option value="rings">Rings</option>
+                <option value="necklace">Necklace</option>
+              </select>
+            </div>
+            <div class="shop-sidebar__filter">
+              <select class="shop-sidebar__select" name="orderby" aria-label="Sort products">
+                <option value="" disabled selected>Sort By</option>
+                <option value="popular">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+
+            <div class="shop-sidebar__filter filter-price">
+              <div id="range-slider" class="filter__price-slider"></div>
+              <div class="filter-price__content d-flex justify-between">
+                <div class="filter-price__aside">Price: $<span id="min-price">0</span> - $<span id="max-price">180</span></div>
+                <button class="filter-price__btn" type="button">Filter</button>
+              </div>
+            </div>
+            <div class="filter-toggles d-flex flex-column">
+              <label class="toggle-item is-loading justify-between" for="sale-toggle">
+                <span class="toggle-text">On sale</span>
+                <input class="toggle-input" id="sale-toggle" type="checkbox">
+                <span class="toggle-slider"></span>
+              </label>
+              <label class="toggle-item is-loading justify-between" for="stock-toggle">
+                <span class="toggle-text">In stock</span>
+                <input class="toggle-input" id="stock-toggle" type="checkbox">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </aside>
+          <div class="shop__content">
+            <!--=include products-grid.html  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--=include footer.html  -->
+<!--=include script.html  -->
